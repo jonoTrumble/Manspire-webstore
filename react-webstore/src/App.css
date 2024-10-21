@@ -1,0 +1,269 @@
+/* Header */
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px; /* Added padding for spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-image {
+  max-height: 50px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #004225;
+}
+
+.icon:hover {
+  color: #00aaff;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: #09271d;
+  padding: 10px; /* Added padding for better touch target */
+  border-radius: 4px;
+}
+
+/* Custom dropdown styling */
+.custom-dropdown {
+  margin-top: 15px;
+  padding: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 150px;
+}
+
+.custom-dropdown-item {
+  color: #004225;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-dropdown-item:hover {
+  background-color: #004225;
+  color: white;
+}
+
+.navbar-toggler-icon {
+  color: white;
+  font-size: 1.5rem;
+  content: '\2630'; /* Unicode for burger icon */
+}
+
+.header .dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+/* Cart Page Styles */
+.cart-container {
+  background-color: #f0f4f8;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.cart-header {
+  color: #09271d;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.cart-empty-message {
+  color: #6c757d;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.cart-item-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  background-color: #09271d;
+  color: white;
+  padding: 18px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.3s;
+}
+
+.cart-item:hover {
+  background-color: #0a3a45;
+}
+
+.cart-total {
+  text-align: center;
+  color: #09271d;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cart-notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  padding: 15px 30px;
+  background-color: #09271d;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cart-notification.hide {
+  opacity: 0;
+}
+
+.remove-button {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 18px;
+}
+
+.remove-button:hover {
+  background-color: #e04b28;
+}
+
+.cardDescription {
+  font-size: 14px;
+}
+
+/* Landing Page */
+.landing-page {
+  background-color: #09271d;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.landing-content {
+  max-width: 800px;
+}
+
+.landing-page h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.landing-page p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.shop-now-btn {
+  background-color: #ffffff;
+  color: #09271d;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #ff5733;
+  color: #ffffff;
+}
+
+/* Help Popup */
+.help-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.help-content h4 {
+  margin-bottom: 10px;
+}
+
+.close-help {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.help-button {
+  margin-left: 290px;
+  padding: 10px 20px;
+  background-color: #09271d;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.help-button:hover {
+  background-color: #ff5733;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .cart-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .cart-header, .cart-total {
+    font-size: 1.3rem;
+  }
+
+  .cart-item {
+    padding: 12px;
+  }
+
+  .landing-page h1 {
+    font-size: 2.5rem;
+  }
+
+  .landing-page p {
+    font-size: 1.2rem;
+  }
+
+  .shop-now-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
